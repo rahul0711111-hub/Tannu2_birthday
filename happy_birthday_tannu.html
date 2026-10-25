@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Tannu ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;overflow:hidden;font-family:'Poppins',sans-serif;background:radial-gradient(circle at 20% 20%,#ff4d8d55,transparent 30%),radial-gradient(circle at 80% 80%,#7c4dff55,transparent 30%),linear-gradient(135deg,#08001c,#18002f,#090019);color:white}
+.stars{position:fixed;inset:0;background-image:radial-gradient(2px 2px at 20% 30%,white,transparent),radial-gradient(2px 2px at 70% 20%,white,transparent),radial-gradient(1.5px 1.5px at 40% 80%,white,transparent),radial-gradient(2px 2px at 90% 60%,white,transparent),radial-gradient(1.5px 1.5px at 10% 70%,white,transparent);background-size:250px 250px;animation:stars 8s linear infinite;opacity:.7}
+@keyframes stars{from{transform:translateY(0)}to{transform:translateY(-250px)}}
+.card{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:min(90%,650px);padding:45px 30px;text-align:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:35px;backdrop-filter:blur(18px);box-shadow:0 0 40px #ff2f9255,inset 0 0 30px #ffffff0d;animation:appear 1.5s ease}
+@keyframes appear{from{opacity:0;transform:translate(-50%,-45%) scale(.8)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+.small{letter-spacing:5px;text-transform:uppercase;font-size:13px;opacity:.8}
+h1{margin-top:12px;font-size:clamp(38px,9vw,70px);font-weight:700;background:linear-gradient(90deg,#fff,#ff80b5,#fff);background-size:200%;-webkit-background-clip:text;color:transparent;animation:shine 3s infinite linear}
+@keyframes shine{to{background-position:200% center}}
+.name{font-family:'Great Vibes',cursive;font-size:clamp(65px,15vw,115px);color:#ff9bc5;text-shadow:0 0 10px #ff4f9a,0 0 30px #ff4f9a,0 0 60px #ff4f9a;animation:pulse 2s infinite alternate}
+@keyframes pulse{from{transform:scale(1)}to{transform:scale(1.05)}}
+.message{max-width:500px;margin:10px auto 25px;line-height:1.8;font-size:16px;color:#eee}
+.cake{position:relative;width:150px;height:100px;margin:35px auto 30px}
+.layer{position:absolute;left:0;width:150px;height:45px;border-radius:12px;background:linear-gradient(#ff75a9,#d92e72);box-shadow:0 8px 15px #0005}
+.layer:nth-child(1){bottom:0}.layer:nth-child(2){width:120px;left:15px;bottom:35px;background:linear-gradient(#ff9ac2,#ef4d8a)}
+.icing{position:absolute;width:120px;height:12px;left:15px;bottom:68px;border-radius:10px;background:#fff}
+.candle{position:absolute;width:8px;height:35px;background:#ffd34d;left:71px;bottom:78px;border-radius:5px}
+.flame{position:absolute;left:68px;bottom:108px;font-size:22px;animation:flame .5s infinite alternate}
+@keyframes flame{to{transform:scale(1.2) rotate(4deg)}}
+button{border:none;padding:14px 30px;border-radius:50px;background:linear-gradient(90deg,#ff3d88,#8e4dff);color:white;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 8px 25px #ff3d8866;transition:.3s}
+button:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 12px 35px #ff3d8899}
+.heart{position:fixed;bottom:-50px;font-size:25px;animation:float 7s linear infinite;pointer-events:none}
+@keyframes float{0%{transform:translateY(0) scale(.8) rotate(0);opacity:0}15%{opacity:1}100%{transform:translateY(-110vh) scale(1.5) rotate(30deg);opacity:0}}
+#surprise{position:fixed;inset:0;display:none;justify-content:center;align-items:center;background:#05000cee;z-index:10;padding:20px}
+.surpriseBox{text-align:center;max-width:600px;padding:40px;border-radius:30px;background:linear-gradient(135deg,#291044,#120022);border:1px solid #ff78ad66;box-shadow:0 0 80px #ff3d8877;animation:zoom .7s ease}
+.surpriseBox h2{font-family:'Great Vibes',cursive;font-size:60px;color:#ff9ac5}.surpriseBox p{margin:15px 0 25px;line-height:1.8}
+@keyframes zoom{from{transform:scale(.3);opacity:0}to{transform:scale(1);opacity:1}}
+.confetti{position:fixed;top:-20px;font-size:20px;animation:fall 4s linear infinite}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<div class="card">
+<div class="small">A special day for someone special</div>
+<h1>Happy Birthday</h1>
+<div class="name">Tannu</div>
+<div class="cake"><div class="layer"></div><div class="layer"></div><div class="icing"></div><div class="candle"></div><div class="flame">🔥</div></div>
+<p class="message">May your life always be filled with beautiful moments, endless smiles, amazing memories and all the happiness you deserve. ✨</p>
+<button onclick="showSurprise()">🎁 Open Your Surprise</button>
+</div>
+<div id="surprise"><div class="surpriseBox">
+<div style="font-size:60px;">🎉💖🎂</div>
+<h2>Dear Tannu</h2>
+<p>Today is all about celebrating <b>YOU!</b> ❤️<br><br>Keep smiling, keep shining and keep being the wonderful person you are. ✨<br><br><b>Happy Birthday once again! 🥳</b></p>
+<button onclick="closeSurprise()">💗 Close</button>
+</div></div>
+<script>
+const hearts=["❤️","💖","💕","✨","💗","🌸"];
+function createHeart(){const heart=document.createElement("div");heart.className="heart";heart.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];heart.style.left=Math.random()*100+"vw";heart.style.animationDuration=(5+Math.random()*4)+"s";document.body.appendChild(heart);setTimeout(()=>heart.remove(),9000)}
+setInterval(createHeart,500);
+function showSurprise(){document.getElementById("surprise").style.display="flex";for(let i=0;i<40;i++){const c=document.createElement("div");c.className="confetti";c.innerHTML=["🎉","✨","💖","🎊","⭐"][Math.floor(Math.random()*5)];c.style.left=Math.random()*100+"vw";c.style.animationDelay=Math.random()*2+"s";document.body.appendChild(c);setTimeout(()=>c.remove(),5000)}}
+function closeSurprise(){document.getElementById("surprise").style.display="none"}
+</script>
+</body>
+</html>
